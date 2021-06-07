@@ -24,7 +24,29 @@
 </head>
 
 <body>
-  
+  <button id="id01" style="display:none" class="btn btn-info" data-toggle="modal" data-target="#mymodal">
+   
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade" id="mymodal" tabindex="-1" role="dialog" aria-labelledby="exampleModal3Label"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModal3Label"><img src="images/LOGO-NUEVO.png" alt=""
+            width="188" height="19" /></h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="images/asn.jpeg" />
+        </div>
+        
+      </div>
+    </div>
+  </div>
   <div class="page">
     <!-- Page Header-->
     <header class="section page-header">
@@ -89,7 +111,9 @@
                   <li class="rd-nav-item"><a class="rd-nav-link" href="asociate.html">Asociate</a>
                     <!-- RD Navbar Dropdown-->
                     <ul class="rd-menu rd-navbar-dropdown">
-                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cuota.html">Pago de la Cuota</a>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="cuota.html"><span class="icon fa fa-hand-o-right"> Pago de la Cuota</span></a>
+                      </li>
+                      <li class="rd-dropdown-item"><a class="rd-dropdown-link" href="honorarios.html"><span class="icon fa fa-hand-o-right"> Honorarios Mínimos</span></a>
                       </li>
                     </ul>
                   </li>
@@ -109,10 +133,12 @@
         </nav>
       </div>
     </header>
+
     <!-- Swiper------------------------------------------------->
+    <div class="d-none d-md-block">
     <section class="section swiper-container swiper-slider swiper-slider-corporate swiper-pagination-style-2"
       data-loop="true" data-autoplay="5000" data-simulate-touch="true" data-nav="false" data-direction="vertical">
-      <div class="swiper-wrapper text-left">
+      <div class="text-left swiper-wrapper">
         <div class="swiper-slide context-dark" data-slide-bg="images/BANER-PAGINA-asociate.png">
           <div class="swiper-slide-caption section-md">
             <div class="container">
@@ -145,26 +171,33 @@
             </div>
           </div>
         </div>
-        <div class="swiper-slide context-dark" data-slide-bg="images/llamado-web.jpeg">
-          <div class="swiper-slide-caption section-md">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-10">
-                  <h6 class="text-uppercase" data-caption-animate="fadeInRight" data-caption-delay="0"></h6>
-                  <h2 class="oh font-weight-light" data-caption-animate="slideInUp" data-caption-delay="100">
-                    <span></span><span class="font-weight-bold"> </span>
-                    <!--</h2><a
-                    class="button button-default-outline button-ujarak" href="#" data-caption-animate="fadeInLeft"
-                    data-caption-delay="0">Get in touch</a>!-->
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        
       </div>
       <!-- Swiper Pagination-->
       <div class="swiper-pagination"></div>
     </section>
+  </div>
+  <!------celular--------------------------->
+  <!--<div class="d-block d-sm-block d-md-none">
+
+ Sección #bienvenidos 
+<section id="bienvenidos" class="py-5">
+
+  <div class="container">
+    
+    <div class="row">
+      <div class="text-center col-12 wow fadeInUp"><img src="images/celu.png" alt="" width="380"
+          height="382" />
+      </div>    
+
+
+    </div>
+  </div>
+</section>
+
+  </div>-->
+
+  <!------------------------------------------>
     <!-- Section Box Categories-->
     <section class="section section-lg section-top-1 bg-gray-4">
       <div class="container offset-negative-1">
@@ -205,7 +238,7 @@
     <section class="section section-sm section-first bg-default text-md-left">
       <div class="container">
         <div class="row row-50 align-items-center justify-content-center justify-content-xl-between">
-          <div class="col-lg-4 text-center wow fadeInUp"><img src="images/1-1-asociate.png" alt="" width="556"
+          <div class="text-center col-lg-4 wow fadeInUp"><img src="images/1-1-asociate.png" alt="" width="556"
               height="382" />
           </div>
           <div class="col-lg-8 wow fadeInRight" data-wow-delay=".1s">
@@ -213,7 +246,7 @@
               <h3>Asociate a la ASN</h3>
               <!-- Bootstrap tabs-->
               <div
-                class="tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-center text-md-left"
+                class="text-center tabs-custom tabs-horizontal tabs-line tabs-line-big tabs-line-style-2 text-md-left"
                 id="tabs-7">
                 <!-- Nav tabs-->
                 <ul class="nav nav-tabs">
@@ -256,36 +289,40 @@
         </div>
       </div>
     </section>
-   
+
 
 
     <!-- Sección #bienvenidos -->
     <section id="bienvenidos" class="py-5">
 
       <div class="container">
-        <header class="text-center text-secondary text-uppercase mb-5">
+        <header class="mb-5 text-center text-secondary text-uppercase">
           <h3 class=" font-weight-bold">NUESTROS SERVICIOS</h3>
-          <p class="lead mt-3 mb-0">Aquí encontrarás sobre:</p>
+          <p class="mt-3 mb-0 lead">Aquí encontrarás sobre:</p>
           <span class="separador-titulos"></span>
         </header>
         <div class="row">
 
-          <div class="col-12 col-lg-5 text-center wow fadeInUp">
+          <div class="text-center col-12 col-lg-5 wow fadeInUp">
 
 
-            <div class="d-flex align-items-center mb-5">
+            <div class="mb-5 d-flex align-items-center">
               <div><img class="img-fluid" src="images/app.png" width="90" alt="" /></div>
               <div class="px-4">
-                <h5 class="fw-bold text-undefined"><a target="_blank" href="https://drive.google.com/file/d/1uGD3yem0pOwCHuD5IJr7C49W4Ny6WHqo/view?usp=sharing">Prestadores Autorizados de DOS</a></h5>
+                <h5 class="fw-bold text-undefined"><a target="_blank"
+                    href="https://drive.google.com/file/d/1uGD3yem0pOwCHuD5IJr7C49W4Ny6WHqo/view?usp=sharing">Prestadores
+                    Autorizados de DOS</a></h5>
                 <p>Listado de nutricionista autorizados por Obra Social Provincia.</p>
               </div>
-             
+
             </div>
-           
-            <div class="d-flex align-items-center mb-5">
+
+            <div class="mb-5 d-flex align-items-center">
               <div><img class="img-fluid" src="images/ux.png" width="90" alt="" /></div>
               <div class="px-4">
-                <h5 class="fw-bold text-undefined"><a target="_blank" href="https://drive.google.com/file/d/1yacfAy9fjM1IHgUPJ1AaPkUhxc15x-_g/view?usp=sharing">Honorarios Mínimos Éticos</a></h5>
+                <h5 class="fw-bold text-undefined"><a target="_blank"
+                    href="honorarios.html">Honorarios
+                    Mínimos Éticos</a></h5>
                 <p>La ASN sugiere los honorarios mínimos profesional del
                   nutricionista y del Licenciado en Nutrición.</p>
               </div>
@@ -293,7 +330,7 @@
 
             </div>
 
-            <!--<div class="d-flex align-items-center mb-5">
+            <!--<div class="mb-5 d-flex align-items-center">
             <div><img class="img-fluid" src="images/cloud.png" width="90" alt="" /></div>
             <div class="px-4">
               <h5 class="fw-bold text-undefined">Cloud Storage</h5>
@@ -305,7 +342,7 @@
 
           </div>
 
-          <div class="col-lg-7 text-center wow fadeInUp"><img src="images/feature-hour.png" alt="" width="380"
+          <div class="text-center col-lg-7 wow fadeInUp"><img src="images/feature-hour.png" alt="" width="380"
               height="382" />
           </div>
 
@@ -319,16 +356,16 @@
     <section id="bienvenidos" class="py-5">
 
       <div class="container">
-        <header class="text-center text-secondary text-uppercase mb-5">
+        <header class="mb-5 text-center text-secondary text-uppercase">
           <h3 class=" font-weight-bold">¿QUIENES SOMOS?</h3>
-          <p class="lead mt-3 mb-0">Aquí también puedes saber sobre nosotros</p>
+          <p class="mt-3 mb-0 lead">Aquí también puedes saber sobre nosotros</p>
           <span class="separador-titulos"></span>
         </header>
         <div class="row">
-          <div class="col-lg-6 text-center wow fadeInUp"><img src="images/feature-phone.png" alt="" width="380"
+          <div class="text-center col-lg-6 wow fadeInUp"><img src="images/feature-phone.png" alt="" width="380"
               height="382" />
           </div>
-          <div class="col-12 col-lg-6 text-center wow fadeInUp">
+          <div class="text-center col-12 col-lg-6 wow fadeInUp">
 
             <div class="fb-page" data-tabs="timeline,events,messages"
               data-href="https://www.facebook.com/asociacionsanjuaninadenutricion/" data-width="500"
@@ -354,8 +391,9 @@
                       <div class="unit">
                         <div class="unit-left"><span class="icon fa fa-whatsapp"></span></div>
                         <div class="unit-body"><a class="link-phone"
-                            href="https://wa.me/5492644557387?text=Hola%20quisiera%20que%20me%20den%20mas%20información">+54 9264455-7387
-                            </a></div>
+                            href="https://wa.me/5492644557387?text=Hola%20quisiera%20que%20me%20den%20mas%20información">+54
+                            9264455-7387
+                          </a></div>
                       </div>
                     </li>
                     <li>
@@ -393,14 +431,17 @@
                     <li>
                       <div class="unit">
                         <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
-                        <div class="unit-body"><a class="link-aemail"
-                            href="#"> <p>Miércoles 16:30<span> pm </span> — 20:30<span> pm </span></p></a></div>
+                        <div class="unit-body"><a class="link-aemail" href="#">
+                            <p>Miércoles 16:30<span> pm </span> — 20:30<span> pm </span></p>
+                          </a></div>
                       </div>
                     </li>
                     <li>
                       <div class="unit">
                         <div class="unit-left"><span class="icon fa fa-clock-o"></span></div>
-                        <div class="unit-body"><a class="link-location" href="#"> <p>Viernes 08:00<span> am </span> — 12:00<span> pm </span></p></a></div>
+                        <div class="unit-body"><a class="link-aemail" href="#">
+                            <p>Viernes 08:00<span> am </span> — 12:00<span> pm</span></p>
+                          </a></div>
                       </div>
                     </li>
                   </ul>
@@ -417,7 +458,7 @@
                         <div class="unit-left"><span class="icon fa fa-facebook"></span></div>
                         <div class="unit-body"><a class="link-phone"
                             href="https://www.facebook.com/asociacionsanjuaninadenutricion">Facebook
-                            </a></div>
+                          </a></div>
                       </div>
                     </li>
                     <li>
@@ -431,11 +472,11 @@
                       <div class="unit">
                         <div class="unit-left"></div>
                         <div class="unit-body"><a class="link-location" href="#"><img src="images/LOGO-NUEVO.png" alt=""
-                          width="188" height="19" /></a></div>
+                              width="188" height="19" /></a></div>
                       </div>
                     </li>
                   </ul>
-                  
+
                 </div>
               </div>
             </div>
@@ -476,9 +517,17 @@
 
   </div>
   <!-- Javascript-->
+  <script type="text/javascript">
+    function redireccionar(){
+     
+      document.getElementById('id01').style.display='active';
+      $("#id01").trigger("click");
+    } 
+    setTimeout ("redireccionar()", 1000); //tiempo expresado en milisegundos
+    </script>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
-
+  
 
 
 </body>
