@@ -1015,7 +1015,6 @@ a[href*='tel'], a[href*='mailto'] {
   max-width: 370px;
   margin-left: auto;
   margin-right: auto;
-  padding: 70px 15px 0;
   border-radius: 8px;
   -webkit-box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
           box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0); }
@@ -10008,6 +10007,9 @@ html.boxed body {
 
 .text-spacing-100 {
   letter-spacing: .025em; }
+
+.text-principal {
+  color: #ff7b00; }
 
 .text-primary {
   color: #01b3a7; }
@@ -21541,5 +21543,4 @@ time {
     left: -15px;
     border-width: 8px 16px 8px 0;
     border-color: transparent #F45B69 transparent transparent; } }
-
 /*# sourceMappingURL=style.css.map */

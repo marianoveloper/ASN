@@ -1,5 +1,6 @@
 @charset "UTF-8";
 $principal:#ff7b00;
+
 a:focus,
 button:focus {
 	outline: none !important;
@@ -1182,7 +1183,7 @@ a[href*='tel'], a[href*='mailto'] {
 	max-width: 370px;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 70px 15px 0;
+	//padding: 70px 15px 0;
 	border-radius: 8px;
 	box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0);
 }
@@ -11489,7 +11490,9 @@ html.boxed body {
 .text-spacing-100 {
 	letter-spacing: .025em;
 }
-
+.text-principal {
+	color: #ff7b00;
+}
 .text-primary {
 	color: #01b3a7;
 }
